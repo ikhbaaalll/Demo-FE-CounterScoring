@@ -1,0 +1,29 @@
+{
+  "extends": ["prettier", "plugin:react/recommended", "eslint-config-prettier"],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "requireConfigFile": false,
+    "babelOptions": {
+      "presets": ["@babel/preset-react"]
+    }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "react/jsx-uses-vars": "error",
+    "react/jsx-uses-react": "error",
+    "react/display-name": "off",
+    "react/prop-types": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
