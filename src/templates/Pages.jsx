@@ -10,7 +10,7 @@ const Pages =
 			<>
 				<Header title={title} />
 				<div
-					className={`bg-white/70 rounded-tl-md w-full h-full flex flex-col overflow-hidden px-4 pt-4`}
+					className={`bg-white/70 rounded-tl-2xl w-full h-full flex flex-col overflow-hidden px-8 pt-4`}
 				>
 					<Component />
 				</div>
